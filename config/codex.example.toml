@@ -1,0 +1,22 @@
+# Use scripts/configure_codex.py to generate .codex/config.toml with your absolute paths.
+# No credentials or global settings are needed.
+[mcp_servers.moex_market]
+command = "/absolute/path/to/.venv/bin/python"
+args = ["-m", "moex_analyst.mcp_server", "--service", "market", "--workspace", "/absolute/path/to/ai-investment"]
+cwd = "/absolute/path/to/ai-investment"
+startup_timeout_sec = 30
+tool_timeout_sec = 180
+
+[mcp_servers.moex_documents]
+command = "/absolute/path/to/.venv/bin/python"
+args = ["-m", "moex_analyst.mcp_server", "--service", "documents", "--workspace", "/absolute/path/to/ai-investment"]
+cwd = "/absolute/path/to/ai-investment"
+startup_timeout_sec = 30
+tool_timeout_sec = 180
+
+[mcp_servers.moex_research]
+command = "/absolute/path/to/.venv/bin/python"
+args = ["-m", "moex_analyst.mcp_server", "--service", "research", "--workspace", "/absolute/path/to/ai-investment"]
+cwd = "/absolute/path/to/ai-investment"
+startup_timeout_sec = 30
+tool_timeout_sec = 180

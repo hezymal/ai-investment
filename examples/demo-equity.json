@@ -1,0 +1,12 @@
+{
+  "price": 100,
+  "shares": 1000000,
+  "net_income_to_common": 10000000,
+  "ebitda": 20000000,
+  "net_debt": 5000000,
+  "book_equity_to_common": 50000000,
+  "dividend_per_share": 5,
+  "earnings_period": "FY 2025",
+  "quote_as_of": "2026-01-01",
+  "source": "synthetic://equity-control-case"
+}

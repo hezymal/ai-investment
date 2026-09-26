@@ -1,0 +1,18 @@
+{
+  "instrument": "SYNTHETIC-BOND",
+  "settlement": "2026-01-01",
+  "maturity": "2027-01-01",
+  "nominal": 1000,
+  "clean_price_percent": 100,
+  "accrued_interest": 0,
+  "cashflows_verified": true,
+  "source": "synthetic://one-year-control-case",
+  "quote_as_of": "2026-01-01T00:00:00Z",
+  "flows": [
+    {
+      "date": "2027-01-01",
+      "coupon": 100,
+      "principal": 1000
+    }
+  ]
+}

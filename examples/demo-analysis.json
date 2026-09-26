@@ -1,0 +1,533 @@
+{
+  "schema_version": 1,
+  "query": "Учебный пример: проанализируй вымышленную компанию",
+  "entity": {
+    "id": "synthetic-factory",
+    "name": "Учебный завод (вымышленная компания)",
+    "sector": "nonfinancial",
+    "role": "group"
+  },
+  "asset_type": "issuer",
+  "as_of": "2026-09-26",
+  "status": "partial",
+  "sources": [
+    {
+      "id": "synthetic",
+      "title": "Синтетический набор для демонстрации",
+      "location": "synthetic://moex-analyst/demo",
+      "retrieved_at": "2026-09-26T00:00:00Z",
+      "period": "2023–2025"
+    }
+  ],
+  "metrics": [
+    {
+      "name": "revenue",
+      "value": 1000,
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2023/revenue",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "net_income",
+      "value": 90,
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2023/net_income",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "ebitda",
+      "value": 220,
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2023/ebitda",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "ebit",
+      "value": 170,
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2023/ebit",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "operating_cash_flow",
+      "value": 160,
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2023/operating_cash_flow",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "capex",
+      "value": 90,
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2023/capex",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "interest_expense",
+      "value": 40,
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2023/interest_expense",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "total_debt",
+      "value": 600,
+      "period_start": "2023-12-31",
+      "period_end": "2023-12-31",
+      "period_kind": "instant",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2023/total_debt",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "cash",
+      "value": 100,
+      "period_start": "2023-12-31",
+      "period_end": "2023-12-31",
+      "period_kind": "instant",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2023/cash",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "revenue",
+      "value": 1150,
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2024/revenue",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "net_income",
+      "value": 105,
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2024/net_income",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "ebitda",
+      "value": 245,
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2024/ebitda",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "ebit",
+      "value": 190,
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2024/ebit",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "operating_cash_flow",
+      "value": null,
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2024/operating_cash_flow",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "capex",
+      "value": 120,
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2024/capex",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "interest_expense",
+      "value": 50,
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2024/interest_expense",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "total_debt",
+      "value": 650,
+      "period_start": "2024-12-31",
+      "period_end": "2024-12-31",
+      "period_kind": "instant",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2024/total_debt",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "cash",
+      "value": 130,
+      "period_start": "2024-12-31",
+      "period_end": "2024-12-31",
+      "period_kind": "instant",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2024/cash",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "revenue",
+      "value": 1300,
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2025/revenue",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "net_income",
+      "value": 110,
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2025/net_income",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "ebitda",
+      "value": 270,
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2025/ebitda",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "ebit",
+      "value": 210,
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2025/ebit",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "operating_cash_flow",
+      "value": 200,
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2025/operating_cash_flow",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "capex",
+      "value": 140,
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2025/capex",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "interest_expense",
+      "value": 65,
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "period_kind": "FY",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2025/interest_expense",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "total_debt",
+      "value": 700,
+      "period_start": "2025-12-31",
+      "period_end": "2025-12-31",
+      "period_kind": "instant",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2025/total_debt",
+      "note": "Вымышленные учебные данные"
+    },
+    {
+      "name": "cash",
+      "value": 150,
+      "period_start": "2025-12-31",
+      "period_end": "2025-12-31",
+      "period_kind": "instant",
+      "standard": "IFRS",
+      "entity_id": "synthetic-factory",
+      "scope": "consolidated",
+      "unit": "currency",
+      "currency": "RUB",
+      "scale": 1000000,
+      "source_ids": [
+        "synthetic"
+      ],
+      "locator": "Synthetic example: 2025/cash",
+      "note": "Вымышленные учебные данные"
+    }
+  ],
+  "summary": "Демонстрация формата, расчётов и графиков. Эти числа не относятся к реальной компании.",
+  "findings": [
+    {
+      "text": "В учебном наборе выручка растёт, но процентные расходы также увеличиваются.",
+      "kind": "interpretation",
+      "source_ids": [
+        "synthetic"
+      ]
+    }
+  ],
+  "strengths": [
+    "Положительный операционный денежный поток в представленных 2023 и 2025 годах."
+  ],
+  "risks": [
+    "Процентные расходы растут быстрее выручки в синтетическом наборе."
+  ],
+  "gaps": [
+    "Операционный денежный поток за 2024 год намеренно отсутствует для демонстрации разрыва."
+  ],
+  "assumptions": [
+    "Все сведения вымышлены; данный пример не является анализом ценной бумаги."
+  ],
+  "conclusion": "Формат проверен на учебных данных. Для реального решения нужны документы эмитента и условия конкретного инструмента."
+}
