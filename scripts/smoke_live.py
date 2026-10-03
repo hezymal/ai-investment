@@ -15,15 +15,20 @@ def main():
     fetcher = Fetcher(root)
     api = Moex(fetcher)
     checks = {
-        "ISS search": lambda: api.search("ROSN")["securities"],
-        "ISS description": lambda: api.security("ROSN")["description"],
-        "ISS quote": lambda: api.quote("ROSN", "shares", "TQBR")["securities"],
-        "ISS candles": lambda: api.series("ROSN", "shares", "TQBR", "2025-09-01", "2025-09-10")["candles"],
-        "ISS history": lambda: api.series("ROSN", "shares", "TQBR", "2025-09-01", "2025-09-10", "history")["history"],
+        "ISS search": lambda: api.search("MOEX")["securities"],
+        "ISS description": lambda: api.security("MOEX")["description"],
+        "ISS quote": lambda: api.quote("MOEX", "shares", "TQBR")["securities"],
+        "ISS candles": lambda: api.series("MOEX", "shares", "TQBR", "2025-09-01", "2025-09-10")["candles"],
+        "ISS history": lambda: api.series("MOEX", "shares", "TQBR", "2025-09-01", "2025-09-10", "history")["history"],
         "ISS coupons": lambda: api.bond_schedule("SU26238RMFS4")["coupons"],
         "CBR key rate": lambda: key_rates(fetcher, (date.today() - timedelta(days=10)).isoformat(), date.today().isoformat())["rates"],
-        "Issuer report links": lambda: Documents(root, fetcher, workspace / "config/issuers.json").discover("rostelecom", True)["documents"],
     }
+    documents = Documents(root, fetcher, workspace / "config/issuers.json")
+    issuers = documents.issuers()
+    if issuers:
+        checks["Issuer report links"] = lambda: documents.discover(issuers[0]["id"], True)["documents"]
+    else:
+        print("SKIP Issuer report links: issuer registry is empty", flush=True)
     failed = 0
     for name, run in checks.items():
         try:
